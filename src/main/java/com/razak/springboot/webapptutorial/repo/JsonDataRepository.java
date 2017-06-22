@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.stereotype.Repository;
 
 import com.razak.springboot.webapptutorial.entity.JsonData;
 
-@RepositoryRestResource(path = "data")
+//@RepositoryRestResource(path = "data")
+@Repository
 public interface JsonDataRepository extends PagingAndSortingRepository<JsonData, Long> {
 	
 	/**
